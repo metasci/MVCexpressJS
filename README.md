@@ -27,7 +27,7 @@
 #### to do
 ##### - add mongodb support
 ##### - load all controllers and middleware with index.js files (recursively -- devs may nest directories)
-##### - attain good code coverage
+##### - attain good code coverage of framework
 
 
 
