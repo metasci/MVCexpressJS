@@ -4,7 +4,8 @@
 module.exports = {
 	
 	index: (req, res, next) => {
-	  res.render('pages/index', { title: 'MVCexpressJS Framework'});
+      // newTitle was added to req in example middleware
+	  res.render('pages/index', { title: req.newTitle});
 	},
 
 	/*
