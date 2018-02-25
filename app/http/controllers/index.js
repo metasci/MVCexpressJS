@@ -1,5 +1,9 @@
-const root = require('app-root-path');
-const Builder = require(root + '/libs/filetree/builder');
+ 
+ /**
+  * Controller files must NOT be named index.js
+  */
 
-const builder = new Builder(__filename);
-module.exports = builder.build(__dirname);
+  const root = require('app-root-path');
+  const builder = require(root + '/libs/filetree/builder');
+  
+  module.exports = builder(__dirname);
