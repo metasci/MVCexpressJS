@@ -4,7 +4,7 @@ const router = express.Router();
 /*
  * Controller references
  */
-const Homepage = require('../app/http/controllers/Homepage');
+const Controller = require('../app/http/controllers');
 
 
 /*
@@ -26,7 +26,7 @@ const models = require('../database/models');
  */
 
 // GET home page.
-router.get('/', example_middleware.example, Homepage.index);
+router.get('/', example_middleware.example, Controller.Homepage.index);
 
 router.get('/db', (req, res)=>{
 
